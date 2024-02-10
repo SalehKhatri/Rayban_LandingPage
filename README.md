@@ -1,16 +1,12 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/SalehKhatri/ReadME-Generator">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
   <h3 align="center">Rayban_LandingPage</h3>
 
   <p align="center">
     A modern animated rayban landing page
     <br/>
     <br/>
-    <a href="salehkhatri.github.io/Rayban_LandingPage">View Demo</a>
+    <a href="https://salehkhatri.github.io/Rayban_LandingPage">View Demo</a>
     .
   </p>
 </p>
