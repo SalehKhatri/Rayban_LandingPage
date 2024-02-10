@@ -35,7 +35,7 @@ Shery.imageEffect("#back", {
 });
 
 var elems = document.querySelectorAll(".elem");
-
+var imgs=document.querySelectorAll("#rightImg")
 elems.forEach(function (elem) {
   var h1s = elem.querySelectorAll("h1");
   var index = 0;
@@ -63,3 +63,28 @@ elems.forEach(function (elem) {
     });
 
 });
+console.log(imgs)
+
+var index=0;
+let animating = false;
+document.querySelector("#main").addEventListener("click",function(){
+  if(!animating){
+    animating=true
+    gsap.to(imgs[index],{
+      top: "-=100%",
+        ease: Expo.easeInOut,
+        duration: 1,
+        onComplete: function () {
+          gsap.set(this._targets[0], { top: "100%" });
+          animating=false;
+        }
+    });
+    index === imgs.length - 1 ? (index = 0) : index++;
+      gsap.to(imgs[index], {
+        top: "-=100%",
+        ease: Expo.easeInOut,
+        duration: 1,
+      });
+    
+  }
+})

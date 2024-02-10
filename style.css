@@ -108,6 +108,17 @@ html,body{
 }
 
 #heroright #imgdiv{
+  position: relative;
+  width:100%;
+  height: 190px;
+  /* background-image: url(./images/aiony-haust-3TLl_97HNJo-unsplash.jpg); */
+  background-size: cover;
+  background-position:center -49px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+/* #heroright #imgdiv{
   width: 100%;
   height: 170px;
   background-image: url(./images/aiony-haust-3TLl_97HNJo-unsplash.jpg);
@@ -115,8 +126,19 @@ html,body{
   background-position:center -49px;
   margin-top: 20px;
   margin-bottom: 30px;
-}
+} */
 
+#heroright #imgdiv>img{
+  position: absolute;
+  top: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 190px;
+}
+#heroright #imgdiv>img:nth-child(1){
+  top: 0;
+}
 #heroright p:nth-child(3){
   margin-bottom: 80px;
 }
